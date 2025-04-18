@@ -1,6 +1,6 @@
 # ✈️ BlueWay Travel
 
-A modern, responsive travel agency website built with HTML, CSS, and Bootstrap. Explore stunning destinations, browse custom travel packages, and book your next adventure — all in one place.
+A modern, responsive travel agency website built with HTML, CSS, JS and Bootstrap. Explore stunning destinations, browse custom travel packages, and book your next adventure — all in one place.
 
 🌐 [Live Website on Netlify](https://taupe-nougat-16108b.netlify.app/)
 
