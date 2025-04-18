@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="shortcut icon" href="Assets/Imags/favicon_big.png" type="image/x-icon">
+  <title>BlueWay Travel Destinations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+
+
+
+
+</head>
+
+<body style="background-color:#0a4153">
+  <header class="navbar navbar-expand-lg custom-navbar p-3">
+    <div class="container">
+      <a id="logo" class="navbar-brand text-white" href="index.html">
+        <img src="Assets/Imags/logo.png" alt="Logo" class="logo-img" style="height: 40px;">
+        <span class="ms-2 fw-bold">BlueWay Travel</span>
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero destination section -->
+  <section class="hero-destination text-center text-white d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="display-4 fw-bold">Discover Your Dream Destination</h1>
+      <p class="lead">BlueWay Travel brings the world closer to you — explore continents, cultures, and adventures.</p>
+    </div>
+  </section>
+
+
+  <section class="container my-5 p-4 bg-light rounded" id="flight-booking">
+    <h2 style="color:#0a4153 ;" class="text-center mb-4 ">Book Your Flight</h2>
+    <form class="row g-3">
+
+      <!-- From -->
+      <div class="col-md-5">
+        <label for="fromCountry" class="form-label text-dark"><i class="fas fa-plane-departure"></i>From</label>
+        <select id="fromCountry" class="form-select">
+          <option selected disabled>Select Departure Country</option>
+          <option>Rome Fiumicino</option>
+          <option>Nice</option>
+          <option>USA</option>
+          <option>India</option>
+          <option>Tokyo</option>
+          <option>Brazil</option>
+          <option>Paris</option>
+          <option>Milan Bergamo</option>
+          <option>Colombia</option>
+          <option>Egypt</option>
+          <option>Lodon</option>
+          <option>Lisbon</option>
+          <option>Larnaca</option>
+          <option>San Rafael</option>
+          <option>Cyprus</option>
+          <option>Athens</option>
+          <option>Amsterdam</option>
+          <option>Albania</option>
+          <option>Brazil</option>
+          <option>New Zealand</option>
+          <option>Antalya</option>
+          <option>Moracco</option>
+          <option>New Yowk</option>
+          <option>Sydney</option>
+          <option>Rio</option>
+          <option>Riyadh</option>
+          <option>Niamey</option>
+          <option>Nigeria</option>
+          <option>China</option>
+
+        </select>
+      </div>
+
+      <!-- Arrow between From and To -->
+      <div class="col-md-2 d-flex justify-content-center align-items-end">
+        <!-- FontAwesome Bidirectional Arrow -->
+        <i class="fas fa-exchange-alt arrow-icon" onclick="swapCountries()"></i>
+      </div>
+
+      <!-- To -->
+      <div class="col-md-5">
+        <label for="toCountry" class="form-label text-dark"><i class="fas fa-plane-arrival"></i>To</label>
+        <select id="toCountry" class="form-select">
+          <option selected disabled>Select Destination Country</option>
+          <option>Rome Fiumicino</option>
+          <option>Nice</option>
+          <option>USA</option>
+          <option>India</option>
+          <option>Tokyo</option>
+          <option>Brazil</option>
+          <option>Paris</option>
+          <option>Milan Bergamo</option>
+          <option>Colombia</option>
+          <option>Egypt</option>
+          <option>Lodon</option>
+          <option>Lisbon</option>
+          <option>Larnaca</option>
+          <option>San Rafael</option>
+          <option>Cyprus</option>
+          <option>Athens</option>
+          <option>Amsterdam</option>
+          <option>Albania</option>
+          <option>Brazil</option>
+          <option>New Zealand</option>
+          <option>Antalya</option>
+          <option>Moracco</option>
+          <option>New Yowk</option>
+          <option>Sydney</option>
+          <option>Rio</option>
+          <option>Riyadh</option>
+          <option>Niamey</option>
+          <option>Nigeria</option>
+          <option>China</option>
+        </select>
+      </div>
+
+      <!-- Departure Date -->
+      <div class="col-md-6">
+        <label for="departureDate" class="form-label text-dark"> <i class="fas fa-calendar-day"></i>Departure</label>
+        <input type="date" id="departureDate" class="form-control" />
+      </div>
+
+      <!-- Return Date -->
+      <div class="col-md-6">
+        <label for="returnDate" class="form-label text-dark"><i class="fas fa-calendar-check"></i>Return</label>
+        <input type="date" id="returnDate" class="form-control" />
+      </div>
+
+      <!-- Travelers -->
+      <div class="col-md-6">
+        <label for="travelers" class="form-label text-dark"><i class="fas fa-user-friends"></i>Travelers</label>
+        <input type="number" id="travelers" class="form-control" min="1" max="10" placeholder="e.g. 2" />
+      </div>
+
+      <!-- Cabin Class -->
+      <div class="col-md-6">
+        <label for="cabinClass" class="form-label text-dark"><i class="fas fa-chair"></i>Cabin Class</label>
+        <select id="cabinClass" class="form-select">
+          <option selected>Economy</option>
+          <option>Business</option>
+          <option>First Class</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <div class="col-12 text-center mt-3">
+        <button type="submit" class="btn btn-primary px-4">Search Flights</button>
+      </div>
+
+    </form>
+  </section>
+
+
+  <!-- Recently Searched Routes -->
+  <section class="container recent-routes mb-5">
+    <h3 class="text-center mb-4 ">Recently Searched Routes</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="route-card">
+          <strong>Rome → Tokyo</strong><br>
+          <small>2 Travelers | Business Class | June 10 - June 20</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="route-card">
+          <strong>New York → Lisbon</strong><br>
+          <small>1 Traveler | Economy | July 5 - July 15</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="route-card">
+          <strong>Paris → Sydney</strong><br>
+          <small>4 Travelers | First Class | August 1 - August 21</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript to Swap the From and To Selections -->
+  <script>
+    function swapCountries() {
+      const from = document.getElementById('fromCountry');
+      const to = document.getElementById('toCountry');
+      const temp = from.value;
+      from.value = to.value;
+      to.value = temp;
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
